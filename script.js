@@ -32,7 +32,7 @@ btn.addEventListener('click', () => {
                 watchMovie=val.embedUrls.map((val)=>{return `<a href=${val.url} target="_blank">${val.server}</a>`})
                 
                 html += `<div class="image-box"> <img src=${val.image}></div><div class="movie-title"><span>${val.titleOriginal}</span></div><div class="movie-rating">${val.rating} IMDb</div><div class="description-box"><p>${val.description}</p></div>
-                <div class="countrie"><span>${countryOrigin}</span></div><div class="movie-release">${val.release}</div><div class="watchMovieBox">${watchMovie}</div>`
+                <div class="countrie"><span>${countryOrigin}</span></div><div class="movie-release">${val.release}</div><div class="watchMovieBox">Watch Movie:${watchMovie}</div>`
             }
 
             MovieData.innerHTML=html;
@@ -47,7 +47,3 @@ btn.addEventListener('click', () => {
 
 
 })
-
-
-
-

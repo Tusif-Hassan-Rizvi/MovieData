@@ -57,4 +57,12 @@ body {
 
 }
 
+.description-box{
+  width: 20vw;
+}
+
+.watchMovieBox{
+  display: flex;
+  flex-direction: column;
+}
 
