@@ -5,7 +5,7 @@ let btn = document.getElementById('btn');
 MovieData.innerHTML="<h2>Search Movie name on search box</h2>"
 
 btn.addEventListener('click', () => {
-    console.log(SearchInput.value)
+    // console.log(SearchInput.value)
     GetInputaVlue = SearchInput.value;
    
 
@@ -20,13 +20,13 @@ btn.addEventListener('click', () => {
     fetch(`https://movies-app1.p.rapidapi.com/api/movies?query=${GetInputaVlue}`, options)
         .then(response => response.json())
         .then(response => {
-            console.log(response.results)
+            // console.log(response.results)
 
             let html = "";
             let countryOrigin;
             let watchMovie;
             for (let val of response.results) {
-                console.log(val)
+                // console.log(val)
 
                 countryOrigin=val.countries.map((val)=>{return val.name})
                 watchMovie=val.embedUrls.map((val)=>{return `<a href=${val.url} target="_blank">${val.server}</a>`})
