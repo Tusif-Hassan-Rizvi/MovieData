@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -32,19 +34,17 @@ body {
   width: 40rem;
   border-radius: 5px 0px 0px 5px;
   border-right: none;
-   
 }
 
-.inputbox button{
+.inputbox button {
   outline: none;
   background-color: rgb(27, 27, 27);
   color: white;
   padding: 10px 20px;
   cursor: pointer;
- 
 }
 
-.inputbox button:active{
+.inputbox button:active {
   background-color: white;
   color: black;
 }
@@ -54,15 +54,91 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
-.description-box{
-  width: 20vw;
+
+.movie-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
+  width: 50vw;
+  min-height: 50vh;
+  margin-bottom: 2rem;
+  padding-bottom: 10px;
+  border-radius: 20px;
 }
 
-.watchMovieBox{
+.movie-box:hover{
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.304);
+}
+.image-box {
+  margin-top: 1rem;
+}
+
+.image-box img{
+  width: 200px;
+}
+
+.movie-title {
+  margin: 5px 0;
+}
+
+.movie-rating {
+  margin: 5px 0;
+}
+
+.description-box  p{
+  width: 20vw; 
+  height: 20vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.country {
+  margin: 10px 0;
+}
+
+.movie-release {
+  margin: 10px 0;
+}
+
+.watchMovieBox {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
+.watchMovieBox a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 6rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.watchMovieBox a:hover {
+  color: rgb(211, 211, 211);
+}
+
+.watchMovieBox a:active {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+
+@media only screen and (max-width: 500px){
+.inputbox input{
+  width: 15rem;
+}
+}
