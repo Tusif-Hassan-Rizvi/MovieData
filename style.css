@@ -56,8 +56,7 @@ body {
   flex-direction: column;
 }
 
-
-.movie-box{
+.movie-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,14 +69,14 @@ body {
   border-radius: 20px;
 }
 
-.movie-box:hover{
+.movie-box:hover {
   box-shadow: 0 0 10px rgba(0, 128, 0, 0.304);
 }
 .image-box {
   margin-top: 1rem;
 }
 
-.image-box img{
+.image-box img {
   width: 200px;
 }
 
@@ -89,11 +88,10 @@ body {
   margin: 5px 0;
 }
 
-.description-box  p{
-  width: 20vw; 
+.description-box p {
+  width: 25vw;
   height: 20vh;
   overflow-y: scroll;
-  overflow-x: hidden;
   margin: 10px 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
   padding: 1rem;
@@ -136,9 +134,12 @@ body {
   border: 1px solid black;
 }
 
+@media only screen and (max-width: 500px) {
+  .inputbox input {
+    width: 15rem;
+  }
 
-@media only screen and (max-width: 500px){
-.inputbox input{
-  width: 15rem;
-}
+  .image-box img {
+    width: 50vw;
+  }
 }
